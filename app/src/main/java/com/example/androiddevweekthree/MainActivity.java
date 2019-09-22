@@ -1,6 +1,7 @@
 package com.example.androiddevweekthree;
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         TextView tvId = (TextView) findViewById(R.id.title_view);
+        EditText eText = (EditText) findViewById(R.id.eText);
+
 
         //Get the date and time
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z");
